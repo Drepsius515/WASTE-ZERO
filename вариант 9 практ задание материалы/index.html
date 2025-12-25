@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сайт</title>
+  <meta name="description" content="Описание сайта" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ZERO WASTE</h1>
+    <nav>
+      <ul>
+        <li><a href="#catalog">Товары</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+        <li>
+          <button id="cart-btn" class="cart-icon" aria-label="Корзина"> &#128722; <span id="cart-count">0</span></button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="catalog">
+      <h2>Товары</h2>
+      <div id="products-container" class="products">
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>О нас</h2>
+      <p class="desc">ZEERO – необычный интернет-магазин. Здесь вас не будут призывать купить как можно больше. Здесь нет цен, оканчивающихся на девятки, черных пятниц и липовых скидок под 90%. Нет всплывающих окон, провоцирующих спонтанные покупки. Нет товаров, сконструированных так, чтобы побыстрее устареть и заставить вас купить замену.
+
+Просто наши ценности не в том, чтобы извлечь максимальную прибыль из популярной идеи. Они в другом.
+      </p>
+      <h3>МАГАЗИН, КОТОРЫЙ НЕ ПРИЗЫВАЕТ ПОКУПАТЬ</h3>
+      <ul>
+          <li><b>Честность</b> Мы не занимаемся гринвошингом, не ставим на продукцию псевдомаркировку и не продаем неэкологичные товары под видом экологичных.</li>
+          <li><b>Многоразовость</b> Вещи должны быть рассчитаны на многоразовое использование и служить как можно дольше. Но при этом быть не менее удобными в использовании, чем одноразовые.</li>
+          <li><b>Качество</b> Только качественный товар может быть по-настоящему многоразовым. Если экомешочек порвался после третьего использования, а многоразовая бутылка для воды через месяц начала протекать – смысла в таких товарах не больше, чем в их одноразовых собратьях.
+
+</li>
+          <li><b>Безопасность</b> Экожизнь должна быть полезна не только для природы, но и для нас с вами. Поэтому мы продаем только те товары, которыми сами готовы пользоваться, и безопасность которых подтверждена. Мы не занимаемся перепродажей с китайских маркетплейсов. Все товары ZEERO имеют необходимые сертификаты и декларации соответствия.</li>
+      </ul>
+    </section>
+
+    <section id="contacts">
+      <h2>Контакты</h2>
+      <p>Телефон - +7(900)555-35-35</p>
+      <p>Адрес - Строителей 8а</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1869.6200374516245!2d129.7338795999061!3d62.05668567427727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5bf64a3355c8cae1%3A0x56ad5cb9b099dc8!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDgsINCv0LrRg9GC0YHQuiwg0KDQtdGB0L8uINCh0LDRhdCwICjQr9C60YPRgtC40Y8pLCA2NzcwMDk!5e0!3m2!1sru!2sru!4v1766632859759!5m2!1sru!2sru" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+      </iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025</p>
+  </footer>
+
+  <div id="cart-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-cart" class="close">&times;</span>
+      <h2>Корзина</h2>
+      <div id="cart-items"></div>
+      <p class="total">Общая цена: <span id="total-price">0 ₽</span></p>
+      <button id="checkout-btn">Покупка</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
